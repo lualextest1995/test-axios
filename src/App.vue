@@ -32,6 +32,15 @@ async function createData() {
     console.log(error)
   }
 }
+
+async function test() {
+  try {
+    getData()
+    getCommentsData()
+  } catch (error) {
+    console.log(error)
+  }
+}
 </script>
 
 <template>
@@ -42,6 +51,7 @@ async function createData() {
     <button @click="getData">Get Data</button>
     <button @click="getCommentsData">Get Comments</button>
     <button @click="createData">Create Data</button>
+    <button @click="test">Test</button>
   </p>
 </template>
 
